@@ -12,6 +12,11 @@ type DatabaseMock struct {
 	mock.Mock
 }
 
+func (database *DatabaseMock) persist(task Task) error {
+	args := database.Called()
+	return args.Error(0)
+}
+
 func (database *DatabaseMock) retrieveAll() ([]Task, error) {
 	args := database.Called()
 	return args.Get(0).([]Task), args.Error(0)
