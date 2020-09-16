@@ -22,6 +22,14 @@ func (database *DatabaseMock) retrieveAll() ([]Task, error) {
 	return args.Get(0).([]Task), args.Error(0)
 }
 
+func TestList(t *testing.T) {
+	databaseMock := new(DatabaseMock)
+
+	databaseMock.On("retrieveAll").Return([]Task{{"Task2 test", false}}, nil)
+
+	fmt.Println(List())
+}
+
 func TestCreate(t *testing.T) {
 	want := []Task{
 		{"Task test", true},
@@ -40,11 +48,4 @@ func TestCreate(t *testing.T) {
 	got := List()
 
 	assert.Equal(t, want, got)
-}
-func TestList(t *testing.T) {
-	databaseMock := new(DatabaseMock)
-
-	databaseMock.On("retrieveAll").Return(nil, nil)
-
-	fmt.Println(List())
 }
