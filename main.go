@@ -23,5 +23,5 @@ func upServer() {
 }
 
 func buildRoutes() {
-	http.HandleFunc("/todo", todo.RequestResolver)
+	http.HandleFunc("/todo", todo.Handler)
 }

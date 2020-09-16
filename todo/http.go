@@ -4,6 +4,6 @@ import (
 	"net/http"
 )
 
-func RequestResolver(response http.ResponseWriter, request *http.Request) {
+func Handler(response http.ResponseWriter, request *http.Request) {
 
 }
