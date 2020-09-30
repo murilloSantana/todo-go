@@ -3,3 +3,6 @@ build:
 
 test:
 	go test -v --cover ./...
+
+run:
+	docker-compose up --build
