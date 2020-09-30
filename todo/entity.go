@@ -6,11 +6,13 @@ type Task struct {
 }
 
 type TaskUcase interface {
-	Create(task Task) error
-	List() ([]Task, error)
+	create(task Task) error
+	list() ([]Task, error)
+	find(id string) (*Task, error)
 }
 
 type Database interface {
-	persist(task Task) error
-	retrieveAll() ([]Task, error)
+	create(task Task) error
+	list() ([]Task, error)
+	find(id string) (*Task, error)
 }

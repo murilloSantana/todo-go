@@ -10,8 +10,8 @@ func NewTaskUcase(db Database) TaskUcase {
 	}
 }
 
-func (u ucase) Create(task Task) error {
-	err := u.db.persist(task)
+func (u ucase) create(task Task) error {
+	err := u.db.create(task)
 
 	if err != nil {
 		return err
@@ -20,12 +20,22 @@ func (u ucase) Create(task Task) error {
 	return nil
 }
 
-func (u ucase) List() ([]Task, error) {
-	tasks, err := u.db.retrieveAll()
+func (u ucase) list() ([]Task, error) {
+	tasks, err := u.db.list()
 
 	if err != nil {
 		return nil, err
 	}
 
 	return tasks, nil
+}
+
+func (u ucase) find(id string) (*Task, error){
+	task, err := u.db.find(id)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return task, nil
 }
