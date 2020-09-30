@@ -8,13 +8,14 @@ import (
 )
 
 func main() {
-	buildRoutes()
+	fmt.Println("Starting the application...")
 	upServer()
 }
 
 func upServer() {
 	port := ":8080"
 
+	buildRoutes()
 	fmt.Printf("Starting server at port %s\n", port)
 
 	if err := http.ListenAndServe(port, nil); err != nil {

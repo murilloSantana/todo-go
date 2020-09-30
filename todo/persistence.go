@@ -1,25 +1,18 @@
 package todo
 
-var database MemoryStorage
+var tasks []Task
 
-type Database interface {
-	persist(task Task) error
-	retrieveAll() ([]Task, error)
+type MemoryStorage struct {}
+
+func NewDatabase() Database {
+	return MemoryStorage{}
 }
 
-type MemoryStorage struct {
-	Tasks []Task
-}
-
-func init() {
-	database = MemoryStorage{}
-}
-
-func (database *MemoryStorage) persist(task Task) error {
-	database.Tasks = append(database.Tasks, task)
+func (database MemoryStorage) persist(task Task) error {
+	tasks = append(tasks, task)
 	return nil
 }
 
-func (database *MemoryStorage) retrieveAll() ([]Task, error) {
-	return database.Tasks, nil
+func (database MemoryStorage) retrieveAll() ([]Task, error) {
+	return tasks, nil
 }
