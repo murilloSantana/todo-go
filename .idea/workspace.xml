@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64fdd044-fbea-4b08-a0fb-1d709a5914c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +148,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2029" y="342" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601574887804">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2029" y="342" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601574887804" />
     <state x="1799" y="232" width="1035" height="629" key="DiffContextDialog" timestamp="1601429867857">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
