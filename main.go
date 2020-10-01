@@ -21,7 +21,7 @@ func upServer() {
 	buildRoutes()
 	fmt.Printf("Starting server at port %s\n", port)
 
-	if err := http.ListenAndServe(fmt.Sprintf(":%v", port), nil); err != nil {
+	if err := http.ListenAndServe(fmt.Sprintf(port), nil); err != nil {
 		log.Fatal(err)
 	}
 }
