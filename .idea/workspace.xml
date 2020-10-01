@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64fdd044-fbea-4b08-a0fb-1d709a5914c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/go.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/go.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/todo/entity.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/persistence.go" beforeDir="false" afterPath="$PROJECT_DIR$/todo/persistence.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/task_ucase.go" beforeDir="false" afterPath="$PROJECT_DIR$/todo/task_ucase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/task_ucase_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/todo/task_ucase_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <recent name="$PROJECT_DIR$/docker" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestFindError in todo-go/todo">
+  <component name="RunManager" selected="Go Test.go test todo">
     <configuration name="TestCreate in todo-go/todo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="todo-go" />
       <working_directory value="$PROJECT_DIR$/todo" />
@@ -122,9 +119,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test todo" />
         <item itemvalue="Go Test.TestFindError in todo-go/todo" />
         <item itemvalue="Go Test.TestFind in todo-go/todo" />
-        <item itemvalue="Go Test.go test todo" />
         <item itemvalue="Go Test.TestListError in todo-go/todo" />
         <item itemvalue="Go Test.TestCreate in todo-go/todo" />
       </list>
@@ -154,22 +151,22 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1799" y="232" width="1035" height="629" key="DiffContextDialog/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601429867857" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1601434603196">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1601434720461">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434603196" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1601434603195">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434720461" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1601434720461">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434603195" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1601434603194">
+    <state width="1874" height="276" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434720461" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1601434720460">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434603194" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1601434603195">
+    <state width="1874" height="276" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434720460" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1601434720461">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434603195" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1601434720461" />
     <state x="2076" y="223" width="490" height="640" key="RollbackChangesDialog" timestamp="1601429868014">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -181,6 +178,6 @@
     <state x="172" y="127" width="1094" height="541" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1294.741/1366.0.1920.1080@72.27.1294.741" timestamp="1600796519417" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/todo_go$go_test_todo.out" NAME="go test todo Coverage Results" MODIFIED="1601429910858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/todo_go$go_test_todo.out" NAME="go test todo Coverage Results" MODIFIED="1601434634307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
