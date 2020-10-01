@@ -13,7 +13,7 @@ func main() {
 }
 
 func upServer() {
-	port := ":8080"
+	port := ":5000"
 
 	buildRoutes()
 	fmt.Printf("Starting server at port %s\n", port)
