@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/joho/godotenv"
 	"log"
 	"net/http"
 	"os"
@@ -14,16 +15,13 @@ func main() {
 }
 
 func upServer() {
+	godotenv.Load()
 	port := os.Getenv("PORT")
-
-	if len(port) == 0 {
-		port = "5000"
-	}
 
 	buildRoutes()
 	fmt.Printf("Starting server at port %s\n", port)
 
-	if err := http.ListenAndServe(":"+port, nil); err != nil {
+	if err := http.ListenAndServe(fmt.Sprintf(":%v", port), nil); err != nil {
 		log.Fatal(err)
 	}
 }
