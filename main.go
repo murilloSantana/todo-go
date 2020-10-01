@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 	"todo-go/todo"
 )
 
@@ -19,7 +18,7 @@ func upServer() {
 	buildRoutes()
 	fmt.Printf("Starting server at port %s\n", port)
 
-	if err := http.ListenAndServe(os.Getenv("PORT"), nil); err != nil {
+	if err := http.ListenAndServe(port, nil); err != nil {
 		log.Fatal(err)
 	}
 }
