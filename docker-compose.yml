@@ -4,3 +4,5 @@ services:
     build: .
     mem_limit: 300m
     restart: always
+    ports:
+      - 8080:8080

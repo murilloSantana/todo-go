@@ -4,6 +4,6 @@ import (
 	"net/http"
 )
 
-func Handler(response http.ResponseWriter, request *http.Request) {
-
+func Handler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("bateu a nave"))
 }
