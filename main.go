@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Starting the application...")
 	upServer()
 }
 
