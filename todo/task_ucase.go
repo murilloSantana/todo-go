@@ -30,7 +30,7 @@ func (u ucase) list() ([]Task, error) {
 	return tasks, nil
 }
 
-func (u ucase) find(id string) (*Task, error){
+func (u ucase) find(id string) (*Task, error) {
 	task, err := u.db.find(id)
 
 	if err != nil {

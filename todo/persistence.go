@@ -2,7 +2,7 @@ package todo
 
 var tasks []Task
 
-type MemoryStorage struct {}
+type MemoryStorage struct{}
 
 func NewDatabase() Database {
 	return MemoryStorage{}
