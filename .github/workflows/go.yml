@@ -37,8 +37,9 @@ jobs:
 
     - name: Test
       run: make test
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
+
+    - name: Coverage
+      run: bash <(curl -s https://codecov.io/bash)
 
     - uses: actions/checkout@master
       with:
