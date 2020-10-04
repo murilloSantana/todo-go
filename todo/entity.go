@@ -3,7 +3,7 @@ package todo
 import "github.com/gin-gonic/gin"
 
 type Task struct {
-	Name   string `json: "task_name"`
+	Name   string `json:"name"`
 	IsDone bool   `json:"is_done"`
 }
 
