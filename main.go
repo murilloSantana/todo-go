@@ -28,6 +28,3 @@ func upServer() {
 		log.Fatal(err)
 	}
 }
-
-func buildRoutes() {
-}
