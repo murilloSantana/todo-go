@@ -64,7 +64,8 @@ func TestCreate(t *testing.T) {
 	taskUcase := NewTaskUcase(NewDatabase())
 
 	for _, task := range want {
-		taskUcase.create(task)
+		err := taskUcase.create(task)
+		assert.Nil(t, err)
 	}
 
 	got, err := taskUcase.list()

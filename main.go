@@ -14,11 +14,15 @@ func main() {
 }
 
 func upServer() {
-	godotenv.Load()
+	if err := godotenv.Load(); err != nil {
+		log.Fatal(err)
+	}
+
 	port := os.Getenv("PORT")
 
-	buildRoutes()
 	fmt.Printf("Starting server at port %s\n", port)
+
+	http.HandleFunc("/todo", todo.Handler)
 
 	if err := http.ListenAndServe(fmt.Sprintf(":%v", port), nil); err != nil {
 		log.Fatal(err)
@@ -26,5 +30,4 @@ func upServer() {
 }
 
 func buildRoutes() {
-	http.HandleFunc("/todo", todo.Handler)
 }
