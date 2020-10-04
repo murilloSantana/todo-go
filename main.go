@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"log"
-	"net/http"
 	"os"
 	"todo-go/todo"
 )
@@ -18,13 +18,11 @@ func upServer() {
 		log.Fatal(err)
 	}
 
-	port := os.Getenv("PORT")
+	gin.SetMode(os.Getenv("GIN_MODE"))
+	r := gin.Default()
+	r.GET("/todo", todo.Handler)
 
-	fmt.Printf("Starting server at port %s\n", port)
-
-	http.HandleFunc("/todo", todo.Handler)
-
-	if err := http.ListenAndServe(fmt.Sprintf(":%v", port), nil); err != nil {
+	if err := r.Run(fmt.Sprintf(":%v", os.Getenv("PORT"))); err != nil {
 		log.Fatal(err)
 	}
 }

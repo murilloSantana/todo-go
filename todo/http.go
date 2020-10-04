@@ -1,8 +1,8 @@
 package todo
 
 import (
-	"net/http"
+	"github.com/gin-gonic/gin"
 )
 
-func Handler(w http.ResponseWriter, r *http.Request) {
+func Handler(c *gin.Context) {
 }
